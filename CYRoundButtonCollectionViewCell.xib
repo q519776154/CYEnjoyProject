@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CYRoundButtonCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="171" height="211"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="171" height="211"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kGq-6W-oF1">
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="kGq-6W-oF1" secondAttribute="height" id="Q6j-Hf-7lD"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="czn-Qv-0fP">
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="czn-Qv-0fP" secondAttribute="bottom" id="OMD-mA-CgN"/>
+                <constraint firstItem="czn-Qv-0fP" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="VuW-IY-waI"/>
+                <constraint firstItem="kGq-6W-oF1" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="ZjC-jV-Lbv"/>
+                <constraint firstItem="kGq-6W-oF1" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" id="urg-C9-IWP"/>
+                <constraint firstItem="kGq-6W-oF1" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="v67-rt-f4b"/>
+            </constraints>
+            <size key="customSize" width="171" height="211"/>
+            <connections>
+                <outlet property="buttonImageView" destination="kGq-6W-oF1" id="4si-jI-483"/>
+                <outlet property="buttonLabel" destination="czn-Qv-0fP" id="4Ze-Db-BQO"/>
+            </connections>
+            <point key="canvasLocation" x="-42.5" y="60.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

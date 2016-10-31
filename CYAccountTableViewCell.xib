@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="60" id="KGk-i7-Jjw" customClass="CYAccountTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="320" height="59"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Baa-Bd-sON"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="头像" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gqc-2E-oBE">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="42" id="Fgi-lt-0S0"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="share_weibo_comment_avartar_100x100_@1x" translatesAutoresizingMaskIntoConstraints="NO" id="iQB-bB-LN9">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="45" id="Pqo-48-xnp"/>
+                            <constraint firstAttribute="height" constant="45" id="ZEZ-VV-YbV"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="enjoypass_arrow_right_icon_13x23_" translatesAutoresizingMaskIntoConstraints="NO" id="9yl-hz-9lm">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="13" id="HWr-IR-wfU"/>
+                            <constraint firstAttribute="width" constant="8" id="LNG-6g-y42"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="9yl-hz-9lm" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="13" id="Law-Kb-03f"/>
+                    <constraint firstItem="iQB-bB-LN9" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-2" id="QwM-qq-i5K"/>
+                    <constraint firstItem="9yl-hz-9lm" firstAttribute="leading" secondItem="iQB-bB-LN9" secondAttribute="trailing" constant="14" id="RfQ-lo-QhB"/>
+                    <constraint firstItem="Gqc-2E-oBE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="15" id="ZHt-uY-V4X"/>
+                    <constraint firstItem="Baa-Bd-sON" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-8" id="dv5-ea-PKb"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Baa-Bd-sON" secondAttribute="trailing" constant="-8" id="kcA-3A-KWp"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Baa-Bd-sON" secondAttribute="bottom" constant="-6" id="nlU-Ed-HlB"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="9yl-hz-9lm" secondAttribute="trailing" constant="11" id="rAB-as-upN"/>
+                    <constraint firstItem="Baa-Bd-sON" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-8" id="vPW-L8-T8g"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Gqc-2E-oBE" secondAttribute="bottom" constant="12" id="wKz-38-o7c"/>
+                    <constraint firstItem="Gqc-2E-oBE" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="12" id="xpJ-vq-fDh"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="headImageButton" destination="iQB-bB-LN9" id="inZ-27-eoy"/>
+            </connections>
+            <point key="canvasLocation" x="33" y="89"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="enjoypass_arrow_right_icon_13x23_" width="13" height="23"/>
+        <image name="share_weibo_comment_avartar_100x100_@1x" width="100" height="100"/>
+    </resources>
+</document>
